@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 5bce19937752df14e808720ca2466014
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Edu QLD Beginner
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 261af6aeab526824abc7b659b80dd7a4, type: 3}
+  - {fileID: 12800000, guid: 70631b9813b4e12448f054a1dde4b50d, type: 3}
+  - {fileID: 12800000, guid: 52c84acf431f901488fcee0a35fa301f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

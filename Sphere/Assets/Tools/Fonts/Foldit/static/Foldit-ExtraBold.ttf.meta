@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 06bb03ecd8d44cc4cbff77c691b9da2e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Foldit
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a0f1886db9b29304a9d101dbb15f6c98, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
