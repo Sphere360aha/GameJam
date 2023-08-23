@@ -9,7 +9,6 @@ public class ObstacleMovement : MonoBehaviour
     {
         
         transform.position = transform.position + (Vector3.up *ObstacleSpeed*Time.deltaTime);
-        Destroy(gameObject,10f);
         
     }
 }
