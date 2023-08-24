@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8686668633979398501}
   - component: {fileID: 8686668633979398500}
-  - component: {fileID: 8686668633979398502}
   - component: {fileID: -3016227454841292822}
+  - component: {fileID: 8756522758605640897}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -84,19 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8686668633979398502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8686668633979398499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 515da3296b8fb484ba4e5af81f351e27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObstacleSpeed: 15
 --- !u!95 &-3016227454841292822
 Animator:
   serializedVersion: 3
@@ -116,3 +103,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8756522758605640897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8686668633979398499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3971d314c913b1499686a5dbfc2f40c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObstacleSpeed: 15
