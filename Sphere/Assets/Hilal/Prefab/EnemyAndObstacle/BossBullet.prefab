@@ -11,11 +11,12 @@ GameObject:
   - component: {fileID: 6830231257103755214}
   - component: {fileID: 6830231257103755209}
   - component: {fileID: 6830231257103755215}
-  - component: {fileID: 4414977655189983676}
   - component: {fileID: -4731159259612295066}
+  - component: {fileID: 8927076923677159228}
+  - component: {fileID: -254665513991056690}
   m_Layer: 0
   m_Name: BossBullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,22 +105,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &4414977655189983676
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6830231257103755208}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.84375
 --- !u!114 &-4731159259612295066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,3 +117,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881ec57044cba3f458ee247435a9e9b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathEffect1: {fileID: 1580624764831715863, guid: b019c67b7cea89549a6aa2c33d4987ff, type: 3}
+  deathEffect2: {fileID: 816860572280820111, guid: 44c0107b913f14347877292aebdb145d, type: 3}
+  sound1: {fileID: 6394648226542378623, guid: 34b3b10d27d856d43b2b5fd318097703, type: 3}
+  moveSpeed: 10
+--- !u!50 &8927076923677159228
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6830231257103755208}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &-254665513991056690
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6830231257103755208}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.675

@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 156147593765459640}
   - component: {fileID: 156147593765459644}
   - component: {fileID: 156147593765459645}
+  - component: {fileID: 3260289121031921077}
+  - component: {fileID: -4669242422470427491}
+  - component: {fileID: -6530107651402378492}
   m_Layer: 0
   m_Name: 'Enemy '
   m_TagString: Enemy
@@ -101,7 +104,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -121,7 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   rb: {fileID: 156147593765459641}
-  speed: 8
+  speed: 6
   rotspeed: 200
 --- !u!95 &156147593765459644
 Animator:
@@ -249,3 +252,50 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!58 &3260289121031921077
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156147593765459591}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.64
+--- !u!114 &-4669242422470427491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156147593765459591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74a39fad7a9c09b4dbd2ae62cba0ea21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathEffect1: {fileID: 1580624764831715863, guid: b019c67b7cea89549a6aa2c33d4987ff, type: 3}
+  deathEffect2: {fileID: 816860572280820111, guid: 44c0107b913f14347877292aebdb145d, type: 3}
+  sound1: {fileID: 6394648226542378623, guid: 3f404f6d10d8c7040bbcb1e85229879d, type: 3}
+--- !u!58 &-6530107651402378492
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156147593765459591}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.64

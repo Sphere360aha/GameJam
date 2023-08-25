@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class BossBulletScript : MonoBehaviour
 {
-    // public GameObject deathEffect;
+    public GameObject deathEffect1,deathEffect2,sound1;
     private Vector2 moveDirection;
     public float moveSpeed =10f;
     private void OnEnable(){Invoke("Destroy",3f);}
@@ -18,19 +18,18 @@ public class BossBulletScript : MonoBehaviour
         }
         if (!other.CompareTag("Enemy"))
         {
-            if(!other.CompareTag("GroundEnemy"))
-            {
                 if(!other.CompareTag("Bullet"))
                 {
                     DestroyProjectile();
                 }
-            }
         }
         }
 
     void DestroyProjectile()
     {
-        // Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Instantiate(sound1, transform.position, Quaternion.identity);
+        Instantiate(deathEffect1, transform.position, Quaternion.identity);
+        Instantiate(deathEffect2, transform.position, Quaternion.identity);
         gameObject.SetActive(false);
     }
 }
