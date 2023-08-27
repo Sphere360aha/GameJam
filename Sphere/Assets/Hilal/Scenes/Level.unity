@@ -1240,9 +1240,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 677664819}
+  - component: {fileID: 677664821}
   - component: {fileID: 677664818}
   - component: {fileID: 677664820}
-  - component: {fileID: 677664821}
   m_Layer: 0
   m_Name: BossSpawner
   m_TagString: Untagged
@@ -1257,17 +1257,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 677664817}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bde33b13f3aac0d479f2a1f9c949efec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 887262692}
-  startTimeBetWeenSpawn: 30
+  startTimeBetWeenSpawn: 70
   TimeDifference: 30
   TimeLimit: 120
   moveSpeed: 5
   active: 0
+  SpawnTracker: {fileID: 1423384717}
 --- !u!4 &677664819
 Transform:
   m_ObjectHideFlags: 0
@@ -1289,17 +1290,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 677664817}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bde33b13f3aac0d479f2a1f9c949efec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1222260012}
-  startTimeBetWeenSpawn: 60
+  startTimeBetWeenSpawn: 110
   TimeDifference: 30
   TimeLimit: 120
   moveSpeed: 5
   active: 0
+  SpawnTracker: {fileID: 1423384717}
 --- !u!114 &677664821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1313,11 +1315,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 637160841}
-  startTimeBetWeenSpawn: 90
+  startTimeBetWeenSpawn: 30
   TimeDifference: 30
   TimeLimit: 120
   moveSpeed: 5
   active: 0
+  SpawnTracker: {fileID: 1423384717}
 --- !u!1 &707546066
 GameObject:
   m_ObjectHideFlags: 0
@@ -11807,7 +11810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5404b4364aaf644db1c2bab66b1b7ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletsAmount: 5
+  bulletsAmount: 3
   starAngle: 180
   endAngle: -180
 --- !u!114 &1222260014
@@ -16816,6 +16819,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!1 &1423384717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1423384719}
+  - component: {fileID: 1423384718}
+  m_Layer: 0
+  m_Name: SpawnerTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1423384718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423384717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40de1217fff20944dbd2c9c4c0b0f71b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawners: {fileID: 1026813145}
+--- !u!4 &1423384719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423384717}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.016492575, y: -12.24696, z: -3.6044645}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1449620447
 GameObject:
   m_ObjectHideFlags: 0

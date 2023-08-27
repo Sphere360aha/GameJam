@@ -15,6 +15,8 @@ public class BossSpawning : MonoBehaviour
     public float moveSpeed;
     public bool active = false;
 
+    public GameObject SpawnTracker;
+
 void Start()
 {TimeBetweenSpawn = startTimeBetWeenSpawn;}
 void Update()
@@ -23,8 +25,11 @@ void Update()
     {
 
         active = !active;
-        if(active){enemy.SetActive(active);enemy.transform.Translate((new Vector2(0,-18))*moveSpeed*Time.deltaTime);TimeBetweenSpawn = TimeDifference;}
-        else{enemy.transform.Translate((new Vector2(enemy.transform.position.x,-30))*moveSpeed*moveSpeed*Time.deltaTime);enemy.SetActive(active);TimeBetweenSpawn = TimeLimit;}
+        if(active){
+            SpawnTracker.GetComponent<SpawnerDeactivate>().SpawnDeactive();
+            enemy.SetActive(active);enemy.transform.Translate((new Vector2(0,-18))*moveSpeed*Time.deltaTime);TimeBetweenSpawn = TimeDifference;}
+        else{SpawnTracker.GetComponent<SpawnerDeactivate>().SpawnActive();
+        enemy.transform.Translate((new Vector2(enemy.transform.position.x,-30))*moveSpeed*moveSpeed*Time.deltaTime);enemy.SetActive(active);TimeBetweenSpawn = TimeLimit;}
     }
     else{TimeBetweenSpawn -=Time.deltaTime;}
 }
