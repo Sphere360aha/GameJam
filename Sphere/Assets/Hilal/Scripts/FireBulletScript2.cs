@@ -25,7 +25,7 @@ public class FireBulletScript2 : MonoBehaviour
         bul.transform.position = transform.position;
         bul.transform.rotation = transform.rotation;
         bul.SetActive(true);
-        bul.GetComponent<BossBulletScript>().SetMoveDirection(bulDir);
+        bul.GetComponent<Enemy2BossMinion>().SetMoveDirection(bulDir);
         angle += angelStep;
     }
 }

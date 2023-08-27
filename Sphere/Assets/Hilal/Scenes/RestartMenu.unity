@@ -197,7 +197,7 @@ MonoBehaviour:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
     topRight: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
     bottomLeft: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
-    bottomRight: {r: 0, g: 0, b: 0, a: 1}
+    bottomRight: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -464,7 +464,7 @@ MonoBehaviour:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
     topRight: {r: 0.8396226, g: 0.8396226, b: 0.8396226, a: 1}
     bottomLeft: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
-    bottomRight: {r: 0, g: 0, b: 0, a: 1}
+    bottomRight: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -839,7 +839,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c8780c19080aff04ba0824ac6d43bb0e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ff9feb658187448488303ec6a5920ecc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 0.6

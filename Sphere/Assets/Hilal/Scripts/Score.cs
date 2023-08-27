@@ -15,7 +15,7 @@ public class Score : MonoBehaviour
    public void addScore(int i)
    {
     playerScore =playerScore+i;
-    mytext.text = "Score : "+playerScore.ToString();
+    mytext.text = "Depth : "+playerScore.ToString();
     PlayerPrefs.SetString("TextData",playerScore.ToString());
    }
 }

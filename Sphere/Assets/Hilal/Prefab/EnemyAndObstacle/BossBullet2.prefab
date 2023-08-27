@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 273693468628265132, guid: 61596309f173b7b45aa29e473d7fe7ba, type: 3}
+  m_Sprite: {fileID: 4783380919058496157, guid: 47d691cc5174f7a4a80e0dd04310afdb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3971d314c913b1499686a5dbfc2f40c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObstacleSpeed: 10
+  ObstacleSpeed: -10
 --- !u!95 &696312291168127401
 Animator:
   serializedVersion: 3
@@ -111,7 +111,7 @@ Animator:
   m_GameObject: {fileID: 3423718252251408275}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5a8adde9d1598c0469968b1dc9c67612, type: 2}
+  m_Controller: {fileID: 9100000, guid: 139563f08631bcf4fa151f4dc86e818e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

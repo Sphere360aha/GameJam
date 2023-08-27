@@ -17,14 +17,18 @@ public class Enemy2BossMinion: MonoBehaviour
     }
     void FixedUpdate()
     {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
         Vector2 direction = target.position - transform.position;
         direction.Normalize();
         float rot = Vector3.Cross(direction,transform.up).z;
         rb.angularVelocity = -rot * rotspeed;
         rb.velocity = transform.up * speed;
     }
-    public void SetMoveDirection(Vector2 dir){moveDirection = dir;}
-    private void Destroy(){gameObject.SetActive(false);}
+    public void SetMoveDirection(Vector2 dir)
+    {
+    moveDirection = dir;
+    transform.Translate(moveDirection*speed*Time.deltaTime);}
+
     private void OnDisable(){CancelInvoke();}
         void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag("Player")){
